@@ -11,12 +11,6 @@ const labelsFirst = [
     "JavaScript",
     "HTML5",
     "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
 ];
 
 const labelsSecond = [
@@ -49,8 +43,8 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <h3>Web Development</h3>
+                    <p>I have built a diverse array of web applications from scratch using modern technologies such as HTML, CSS, JavaScript,React, and TypeScript. I have a strong proficiency in the SDLC process and frontend development.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
