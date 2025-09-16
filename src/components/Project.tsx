@@ -16,7 +16,7 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
-            <div className="project">
+            <div className="project" >
                 <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Translation of Indic Languages to English and vice-versa using NLP</h2></a>
                 <p>Built a transformer-based neural machine translation model to translate multiple Indian languages to English and vice-versa. Integrated text-to-speech functionality to generate audio output of translations, enhancing accessibility for non-English speakers.</p>
