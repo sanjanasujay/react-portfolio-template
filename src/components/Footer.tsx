@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
       <div>
-        <a href="" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+        <a href="https://github.com/sanjanasujay" target="_blank" rel="noreferrer"><GitHubIcon/></a>
         <a href="https://www.linkedin.com/in/sanjana6488527/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
       </div>
       <p>A portfolio designed by Sanjana Sujay with 💜</p>
