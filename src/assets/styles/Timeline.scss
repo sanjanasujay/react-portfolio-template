@@ -31,6 +31,29 @@
     color: white;
 }
 
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.current-job-badge {
+    background: linear-gradient(135deg, #5000ca 0%, #b399ff 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.vertical-timeline-element--work.current-job {
+    box-shadow: inset 0 0 0 3px #5000ca;
+}
+
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);

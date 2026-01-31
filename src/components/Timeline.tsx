@@ -13,14 +13,17 @@ function Timeline() {
         <h1>Career History</h1>
         <VerticalTimeline>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work current-job"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="September 2023 - June 2025"
+            date="October 2025 - Present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Student Assistant - San Diego State University</h3>
+            <div className="job-header">
+              <h3 className="vertical-timeline-element-title">Student Assistant - San Diego State University</h3>
+              <span className="current-job-badge">My Current Role</span>
+            </div>
             <h4 className="vertical-timeline-element-subtitle">San Diego, CA</h4>
             <p>Managed digital content for the College of Sciences website via Modern Campus. Concurrently developed Python scripts to automate research data analysis, cutting manual processing time by 30% and eliminating human error to improve data integrity.</p>
             
