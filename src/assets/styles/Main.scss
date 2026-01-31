@@ -15,6 +15,14 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    transition: all 0.3s ease;
+
+    &.zoomed-active {
+        .content {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
 }
 
 .about-section .content {
@@ -51,8 +59,74 @@
 
 .about-section .image-wrapper {
     z-index: 2;
-    img {
+    position: relative;
+
+    .profile-image {
         width: 150px;
+        border-radius: 5%;
+        cursor: zoom-in;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .zoom-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        backdrop-filter: blur(2px);
+    }
+
+    .zoom-content {
+        position: relative;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: linear-gradient(135deg, #5000ca 0%, #b399ff 100%);
+        border: none;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        z-index: 2001;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        svg {
+            font-size: 24px;
+        }
+    }
+
+    .zoomed-image {
+        width: auto;
+        max-width: 80vw;
+        max-height: 80vh;
         border-radius: 5%;
     }
 }
